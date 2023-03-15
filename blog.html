@@ -12,11 +12,11 @@
 
 <body>
 
-    <header class="container mt-4 text-center">
-        <h2 class="text-warning">Welcome to blog site!!!</h2>
+    <header class="container mt-5 text-center">
+        <h2 class="text-warning  text-bg-secondary rounded p-2">Welcome to blog site!!!</h2>
     </header>
 
-    <main>
+    <main class="my-5">
         <section class="container">
 
             <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -25,27 +25,33 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                             aria-controls="panelsStayOpen-collapseOne">
-                            What is the difference between Find, Map, French, Filter?
+                            <h2 class="text-danger"> What is the difference between Find, Map, French, Filter?</h2>
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                         aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                            <strong>Map() :</strong>
+                            <h3> <strong>Map() :</strong></h3>
                             The map() function receives a function as a parameter and will apply the code on each
                             element and returns an entirely new array. It will not change the original array.
                             A map() function returns a new array and thus it should only be used if you are going to use
                             the returned array else one should prefer forEach() function.
-                            <strong>forEach() :</strong> The forEach() function receives a function as an argument and
+                            <br>
+                            <h3> <strong>forEach() :</strong> </h3>The forEach() function receives a function as an
+                            argument and
                             it applies the same code to every element. It will not return anything, it just applies the
                             conditions to every element. It will not change the original array.
 
                             The return value of forEach() method is undefined. The forEach() method does not wait until
                             promises are resolved.
-                            <strong>filter() :</strong> The filter() method receives function as a parameter. It runs
+                            <br>
+                            <h3> <strong>filter() :</strong></h3> The filter() method receives function as a parameter.
+                            It runs
                             the function for each element in the array. It will return the new array which satisfies the
                             condition applied. It will not change the original array.
-                            <strong>find() :</strong> The ES6 find() method returns the value of the first element that
+                            <br>
+                            <h3> <strong>find() :</strong></h3> The ES6 find() method returns the value of the first
+                            element that
                             passes a testing function. If no values satisfy the testing function, undefined is returned.
                         </div>
                     </div>
@@ -55,23 +61,29 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseTwo">
-                            Accordion Item #2
+                            <h2 class="text-danger">What is difference between localStorage , seasonStorage and cookie ?
+                            </h2>
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting that
-                            just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit
-                            overflow.
+                            <h3> <strong>localStorage :</strong></h3> This read-only interface property provides
+                            access to the Document’s local storage object, the stored data is stored across browser
+                            sessions. Similar to sessionStorage, except that sessionStorage data gets cleared when the
+                            page session ends – that is when the page is closed. It is cleared when the last “private”
+                            tab of a browser is closed (localStorage data for a document loaded in a private browsing or
+                            incognito session).
+                            <h3> <strong>seasonStorage :</strong></h3> Session Storage objects can be accessed using the
+                            sessionStorage read-only property. The difference between sessionStorage and localStorage is
+                            that localStorage data does not expire, whereas sessionStorage data is cleared when the page
+                            session ends.
+                            <h3> <strong>cookie :</strong></h3> The term “cookie” refers to just the textual information
+                            about a website. In order to recognize you and show you results according to your
+                            preferences, this website saves some information in your local system when you visit a
+                            particular website. The history of the internet has long been marked by the use of cookies.
+                            A website visitor asks the server for a web page when they visit it. Every request for a
+                            server is unique.
                         </div>
                     </div>
                 </div>
@@ -80,22 +92,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseThree">
-                            Accordion Item #3
+                            <h2 class="text-danger">What is event loop?</h2>
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting that
-                            just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit
-                            overflow.
+                            <strong>Event loop :</strong> Where is event loop in JavaScript?
+                            Image result for what is event loop
+                            Event loop in JavaScript is a mechanism through which the 'calls waiting for execution' in
+                            the callback queue/job queue can be put on the call stack. For any event from the callback
+                            queue/job queue to come to call stack, the call stack will have to be empty.
                         </div>
                     </div>
                 </div>
@@ -104,22 +111,14 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseFour">
-                            Accordion Item #3
+                            <h2 class="text-danger">What does the quizTimer function do?</h2>
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingFour">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting that
-                            just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit
-                            overflow.
+                            <h3> <strong>quizTimer() :</strong></h3>
+                            The quizTimer function checks how long the quiz takes and counts the total time of the quiz.
                         </div>
                     </div>
                 </div>
@@ -128,22 +127,14 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseFive">
-                            Accordion Item #3
+                            <h2 class="text-danger">What does the chooseQuiz function do?</h2>
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingFive">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting that
-                            just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit
-                            overflow.
+                            <h3><strong>chooseQuiz() :</strong></h3>
+                            The chooseQuiz function is used to select the answer for each quiz.
                         </div>
                     </div>
                 </div>
