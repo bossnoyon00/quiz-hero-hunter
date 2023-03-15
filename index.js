@@ -13,6 +13,10 @@ let quizContainer = document.querySelector("#quizContainer");
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
 
+document.getElementById('blog').addEventListener('click', function () {
+  location.href = 'blog.html';
+})
+
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
   let countDown = document.querySelector("#countDownContainer");
@@ -53,7 +57,6 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
-  const quizContainer = document.getElementById('quizContainer');
   console.log(data);
   if (!data) {
     quizContainer.innerHTML = "";
@@ -139,6 +142,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   // Right side bar/ answer section
   let x = setTimeout(() => {
     showAnswers(answers);
+    console.log(answers);
     displayResult.innerHTML = `<div
     class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
   >
@@ -164,6 +168,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     <div>Grade</div>
     <div>Time</div>
     </div>
+    
     ${storage
           ?.reverse()
           ?.map(
@@ -174,10 +179,10 @@ document.querySelector("#submit").addEventListener("click", () => {
       <div>${item.examTime}</div>
       </div>`
           )
-          ?.join("")}`
+          ?.join('')}`
         : ""
       }
-  </div>
+  </div >
   `;
 
     clearTimeout(x);
