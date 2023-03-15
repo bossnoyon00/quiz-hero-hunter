@@ -25,22 +25,28 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                             aria-controls="panelsStayOpen-collapseOne">
-                            
+                            What is the difference between Find, Map, French, Filter?
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                         aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse
-                            plugin adds the appropriate classes that we use to style each element. These classes control
-                            the
-                            overall appearance, as well as the showing and hiding via CSS transitions. You can modify
-                            any of
-                            this with custom CSS or overriding our default variables. It's also worth noting that just
-                            about any
-                            HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                            overflow.
+                            <strong>Map() :</strong>
+                            The map() function receives a function as a parameter and will apply the code on each
+                            element and returns an entirely new array. It will not change the original array.
+                            A map() function returns a new array and thus it should only be used if you are going to use
+                            the returned array else one should prefer forEach() function.
+                            <strong>forEach() :</strong> The forEach() function receives a function as an argument and
+                            it applies the same code to every element. It will not return anything, it just applies the
+                            conditions to every element. It will not change the original array.
+
+                            The return value of forEach() method is undefined. The forEach() method does not wait until
+                            promises are resolved.
+                            <strong>filter() :</strong> The filter() method receives function as a parameter. It runs
+                            the function for each element in the array. It will return the new array which satisfies the
+                            condition applied. It will not change the original array.
+                            <strong>find() :</strong> The ES6 find() method returns the value of the first element that
+                            passes a testing function. If no values satisfy the testing function, undefined is returned.
                         </div>
                     </div>
                 </div>
@@ -94,15 +100,15 @@
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseThree">
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
                             Accordion Item #3
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
                         <div class="accordion-body">
                             <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
                             collapse plugin adds the appropriate classes that we use to style each element. These
@@ -118,15 +124,15 @@
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseThree">
+                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFive">
                             Accordion Item #3
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFive">
                         <div class="accordion-body">
                             <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
                             collapse plugin adds the appropriate classes that we use to style each element. These
